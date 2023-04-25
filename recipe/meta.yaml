@@ -24,7 +24,7 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base {{ r_version }}
     - r-digest
     - r-glue
     - r-htmltools
@@ -40,7 +40,7 @@ requirements:
     - r-webshot
     - r-xml2 >=1.1.1
   run:
-    - r-base
+    - r-base {{ r_version }}
     - r-digest
     - r-glue
     - r-htmltools
@@ -75,6 +75,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - PertuyF
+    - ianaobi
 
 # Package: kableExtra
 # Type: Package
